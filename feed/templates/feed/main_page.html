@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css'%}">
+    <title>Main Page</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="username">
+            <h3>WELCOME, {{username}}</h3>
+        </div>
+        <button><img src="{% static 'profile.png'%}" alt=""></button>
+    </header>
+
+    <div id="titleSection">
+        <h1 id="sectionTitle">CATEGORIES OF ORGANIZATION</h1>
+    </div>
+
+    <div class="categoriesSection">
+        <a href="/humanities"><img src="{% static 'humanities.png'%}" alt=""></a>
+        <a href="/education"><img src="{% static 'education.png'%}" alt=""></a>
+        <a href="/environment"><img src="{% static 'enviorment.png'%}" alt=""></a>
+        <a href="/health"><img src="{% static 'health.png'%}" alt=""></a>
+    </div>
+
+    <div class="categoriesSection" id="tealColor">
+        <a href="/charity"><img src="{% static 'charity.png'%}" alt=""></a>
+        <a href="/religion"><img src="{% static 'religion.png'%}" alt=""></a>
+        <a href="/services"><img src="{% static 'services.png'%}" alt=""></a>
+        <a href="/other"><img src="{% static 'other.png'%}" alt=""></a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<title>
+    Welcome!
+</title>
+
+    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'starting_page.css'%}">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <header>
+        <a href="login"><button id="login">Login</button></a>
+        <a href="signuporganization"><button id="prganization">Publish Organization</button></a>
+        <a href="signup"><button id="signup">Sign Up for Public</button></a>
+    </header>
+    <hr>
+
+    <div id="mainContainer">
+        <section id="leftSection">
+            <h1>Welcome</h1>
+            <h3>Our Purpose</h3>
+            <p> CyberAct is a place where you can discover different types of non-profit organizations. Now, you may be asking what's the point, we already have instagram and facebook. These forms of media are very wide and general. Once you open the app, you
+                may find a good meme page, and before you know it, an hour has already passed. Those forms of media easily distract us. In CyberAct you can easily discover different types of non-profit organizations with a click of a button. These organizations
+                are categorized, so you can best find what relates to you. You can explore other users' experience and previous interactions with each media, allowing you to truly discover what lies out there.</p>
+        </section>
+
+        <section id="middleSection">
+            <img src="{% static 'testAll.png'%}" alt="">
+        </section>
+
+        <div id="rightSection">
+            <section id="organizations">
+                <h2>Organizations</h2>
+                <p>
+                    If you are part of an organization and you want to showcase your cause here, please click on the Publish Organization button and follow the steps. Then you can start entering your organization to show everyone your mission!
+                </p>
+            </section>
+            <section id="public">
+                <h2>Public</h2>
+                <p>
+                    You’ve come to the right place to discover worthy causes and wonderful organizations! Just login/sign up and start browsing!
+                </p>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<title>Publish Organization</title>
+
+<h1>Information</h1>
+    <form method="POST" action='/signuporganization/'>
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type='submit',name="save">Publish</button>
+    </form>

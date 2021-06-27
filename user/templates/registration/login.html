@@ -1,0 +1,7 @@
+<title>Log in</title>
+<h1>Log in</h1>
+<form method="POST" class='form-group'>
+    {%csrf_token %}
+    {{form.as_p}}
+    <button type='submit',class='btn btn-success'>Login</button>
+</form>

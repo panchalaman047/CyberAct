@@ -1,0 +1,7 @@
+<title>Sign Up</title>
+<h1>Sign Up</h1>
+<form method="POST" class='form-group'>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type='submit' class='btn btn-success'>Sign Up</button>
+</form>
